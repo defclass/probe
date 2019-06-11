@@ -7,7 +7,7 @@ A lightweight profiler for clojure app.
 
 Add probe dependence:
 
-[![Clojars Project](https://img.shields.io/clojars/v/probe.svg)](https://clojars.org/defclass/probe)
+[![Clojars Project](https://img.shields.io/clojars/v/defclass/probe.svg)](https://clojars.org/defclass/probe)
 
 Examples:
 
