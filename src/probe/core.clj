@@ -49,7 +49,7 @@
 
 (def root-state ::Root)
 
-(def ^:dynamic *state* ::Root)
+(def ^:dynamic *state* root-state)
 
 (defn exec [state f args]
   (let [depth  (.get state :depth)
@@ -67,7 +67,7 @@
 
 (defn duration
   [f args]
-  (if (= ::Root *state*)
+  (if (= root-state *state*)
     (binding [*state* (get-state-obj 0)]
       (let [r (exec *state* f args)]
        ((:logger @config) *state*)
